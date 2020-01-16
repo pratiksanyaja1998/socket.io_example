@@ -1,0 +1,96 @@
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:rgba(241, 241, 241, 0); 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  /* end */
+
+
+
+  /* app custom */
+
+  .app-header{
+    padding: 10px;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    font-size: xx-large;
+  }
+
+  .user-root{
+    top: 10%;position:absolute;width:25%;height:90%;
+  }
+
+  .user-list{
+    overflow: auto;
+    height: 90%;
+  }
+
+  .user-search{
+    height: 10%;
+    padding: 9px;
+    background-color: darkgray;
+  }
+
+  .user-root .w3-bar:hover{
+    background-color: #989898;
+  }
+
+  .message-root{
+   
+    top: 10%;position:absolute;margin-left:25%;height:90%;
+    width: 75%;
+    
+  }
+
+.msg-form{
+  height: 10%;
+  padding: 10px;
+  background: darkgray;
+}
+
+  .message-box{
+    overflow: scroll;
+    height: 90%;
+    padding: 7px;
+  }
+
+  .msg{
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 5px;
+  }
+
+  .frd-msg{
+    background-color: antiquewhite;
+    text-align: left;
+  }
+
+  .user-msg{
+    text-align: right;
+    background: white;
+  
+  }
+
+  .active{
+    background: #555;
+  }

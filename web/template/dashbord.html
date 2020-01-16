@@ -1,0 +1,55 @@
+<div>
+
+
+    <div class="w3-teal app-header w3-card">
+        Local Charts Wellcome ,{{user.username}}
+    </div>
+
+    <div class="w3-border-right user-root">
+
+        <div class="user-search">
+                <form >
+                        <input class="w3-input w3-border" name="message" type="text" placeholder="Search ...">
+                    </form>
+        </div>
+
+        <div class=" user-list">
+        <ul class="w3-ul">
+
+            <li ng-repeat="row in userList track by $index " ng-if='userList && row.username!=user.username'  ng-class="{ 'active': $index==activeUserId }" class="w3-bar " ng-click="setActiveUserRoom($index)">
+                <img src="./assets/avatar.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                <div class="w3-bar-item">
+                    <span class="w3-large">{{row.username}}</span><br>
+                    <span>{{row.fristname}} {{row.lastname}}</span>
+                    <span ng-if="row.unwhatch"><strong><small>new</small></strong></span>
+                </div>
+            </li>
+
+            
+
+        </ul>
+        </div>
+
+    </div>
+
+    <div class=" message-root">
+
+        <div class="message-box" ng-show="activeUserId!=null">
+            <div ng-repeat="row in userList[activeUserId].message track by $index " 
+            class=" msg" ng-class= "{ 'frd-msg': row.isuser, 'user-msg ': !row.isuser }">
+            {{row.msg}}</div>
+          
+          
+        </div>
+
+        <div class="msg-form" ng-show="activeUserId!=null">
+            <form ng-submit="submitMsg()">
+                <input class="w3-input w3-border" name="message" ng-model = 'msgInput' type="text" placeholder="Message">
+            </form>
+        </div>
+
+
+    </div>
+
+
+</div>
