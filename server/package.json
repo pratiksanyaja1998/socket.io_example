@@ -9,7 +9,7 @@
   "author": "spyhunter272.in",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "knex": "^0.15.2",
     "socket.io": "^2.1.0",
     "sqlite3": "^4.0.2",
