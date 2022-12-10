@@ -9,10 +9,10 @@
   "author": "spyhunter272.in",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "knex": "^0.15.2",
     "socket.io": "^2.1.0",
     "sqlite3": "^4.0.2",
-    "body-parser": "^1.8.1"
+    "body-parser": "^1.20.1"
   }
 }
